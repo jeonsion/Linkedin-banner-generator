@@ -137,7 +137,7 @@
             <!-- Preview Section -->
             <section class="preview-section">
                 <div class="preview-header">
-                    <h2>미리보기</h2>
+                    <h2>Preview</h2>
                     <div class="preview-controls">
                         <button id="toggleSafeZone" class="btn btn-outline active">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -145,7 +145,7 @@
                                 <circle cx="12" cy="12" r="10" />
                                 <path d="M12 8v8M8 12h8" />
                             </svg>
-                            안전 구역
+                            Safe Zone
                         </button>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                         <canvas id="bannerCanvas" width="1584" height="396"></canvas>
                         <div class="safe-zone-overlay" id="safeZoneOverlay">
                             <div class="profile-circle"></div>
-                            <div class="safe-zone-label">프로필 사진 영역</div>
+                            <div class="safe-zone-label">Profile Photo Area</div>
                         </div>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                             <circle cx="12" cy="12" r="10" />
                             <path d="M12 16v-4M12 8h.01" />
                         </svg>
-                        프로필 사진이 가릴 수 있는 영역을 확인하세요
+                        Check the area that may be covered by the profile photo
                     </span>
                 </div>
             </section>
@@ -181,19 +181,19 @@
                             stroke-width="2">
                             <rect x="3" y="3" width="18" height="18" rx="2" />
                         </svg>
-                        배경 설정
+                        Background
                     </h3>
 
                     <div class="control-row">
-                        <label>배경 타입</label>
+                        <label>Background Type</label>
                         <div class="toggle-group" id="bgTypeToggle">
-                            <button class="toggle-btn active" data-type="solid">단색</button>
-                            <button class="toggle-btn" data-type="gradient">그라데이션</button>
+                            <button class="toggle-btn active" data-type="solid">Solid</button>
+                            <button class="toggle-btn" data-type="gradient">Gradient</button>
                         </div>
                     </div>
 
                     <div class="control-row" id="solidColorRow">
-                        <label>배경 색상</label>
+                        <label>Background Color</label>
                         <div class="color-picker-wrapper">
                             <input type="color" id="bgColor" value="#0077B5">
                             <span class="color-value" id="bgColorValue">#0077B5</span>
@@ -201,7 +201,7 @@
                     </div>
 
                     <div class="control-row hidden" id="gradientRow">
-                        <label>그라데이션 색상</label>
+                        <label>Gradient Colors</label>
                         <div class="gradient-colors">
                             <div class="color-picker-wrapper">
                                 <input type="color" id="gradientColor1" value="#667eea">
@@ -219,20 +219,20 @@
                     </div>
 
                     <div class="control-row hidden" id="gradientDirectionRow">
-                        <label>그라데이션 방향</label>
+                        <label>Gradient Direction</label>
                         <select id="gradientDirection">
-                            <option value="to right">가로 (→)</option>
-                            <option value="to left">가로 (←)</option>
-                            <option value="to bottom">세로 (↓)</option>
-                            <option value="to top">세로 (↑)</option>
-                            <option value="to bottom right">대각선 (↘)</option>
-                            <option value="to top right">대각선 (↗)</option>
+                            <option value="to right">Horizontal (→)</option>
+                            <option value="to left">Horizontal (←)</option>
+                            <option value="to bottom">Vertical (↓)</option>
+                            <option value="to top">Vertical (↑)</option>
+                            <option value="to bottom right">Diagonal (↘)</option>
+                            <option value="to top right">Diagonal (↗)</option>
                         </select>
                     </div>
 
                     <!-- Preset Colors -->
                     <div class="control-row">
-                        <label>프리셋 색상</label>
+                        <label>Preset Colors</label>
                         <div class="preset-colors">
                             <button class="preset-color" data-color="#0077B5" style="background: #0077B5"
                                 title="LinkedIn Blue"></button>
@@ -261,27 +261,29 @@
                             stroke-width="2">
                             <path d="M4 7V4h16v3M9 20h6M12 4v16" />
                         </svg>
-                        텍스트 설정
+                        Text Settings
                     </h3>
 
                     <div class="control-row">
-                        <label>메인 텍스트</label>
-                        <input type="text" id="mainText" placeholder="이름 또는 직함" value="Your Name Here" maxlength="50">
+                        <label>Main Text</label>
+                        <input type="text" id="mainText" placeholder="Name or Title" value="Your Name Here"
+                            maxlength="50">
                     </div>
 
                     <div class="control-row">
-                        <label>서브 텍스트 1</label>
-                        <input type="text" id="subText" placeholder="직업, 회사명, 또는 한 줄 소개"
+                        <label>Sub Text 1</label>
+                        <input type="text" id="subText" placeholder="Job, company, or tagline"
                             value="Professional Title | Company" maxlength="80">
                     </div>
 
                     <div class="control-row">
-                        <label>서브 텍스트 2 (선택)</label>
-                        <input type="text" id="subText2" placeholder="추가 정보 (비워두면 표시 안 됨)" value="" maxlength="80">
+                        <label>Sub Text 2 (Optional)</label>
+                        <input type="text" id="subText2" placeholder="Additional info (leave empty to hide)" value=""
+                            maxlength="80">
                     </div>
 
                     <div class="control-row">
-                        <label>텍스트 색상</label>
+                        <label>Text Color</label>
                         <div class="color-picker-wrapper">
                             <input type="color" id="textColor" value="#ffffff">
                             <span class="color-value" id="textColorValue">#ffffff</span>
@@ -289,16 +291,16 @@
                     </div>
 
                     <div class="control-row">
-                        <label>텍스트 위치</label>
+                        <label>Text Position</label>
                         <select id="textAlign">
-                            <option value="left">왼쪽</option>
-                            <option value="center" selected>중앙</option>
-                            <option value="right">오른쪽</option>
+                            <option value="left">Left</option>
+                            <option value="center" selected>Center</option>
+                            <option value="right">Right</option>
                         </select>
                     </div>
 
                     <div class="control-row">
-                        <label>메인 텍스트 크기</label>
+                        <label>Main Text Size</label>
                         <div class="range-wrapper">
                             <input type="range" id="mainTextSize" min="24" max="80" value="48">
                             <span class="range-value" id="mainTextSizeValue">48px</span>
@@ -306,7 +308,7 @@
                     </div>
 
                     <div class="control-row">
-                        <label>서브 텍스트 크기</label>
+                        <label>Sub Text Size</label>
                         <div class="range-wrapper">
                             <input type="range" id="subTextSize" min="14" max="40" value="24">
                             <span class="range-value" id="subTextSizeValue">24px</span>
@@ -322,22 +324,22 @@
                             <polygon
                                 points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                         </svg>
-                        장식 요소
+                        Decorations
                     </h3>
 
                     <div class="control-row">
-                        <label>패턴 추가</label>
+                        <label>Add Pattern</label>
                         <select id="patternType">
-                            <option value="none">없음</option>
-                            <option value="dots">도트 패턴</option>
-                            <option value="lines">라인 패턴</option>
-                            <option value="grid">그리드 패턴</option>
-                            <option value="circles">원형 패턴</option>
+                            <option value="none">None</option>
+                            <option value="dots">Dots</option>
+                            <option value="lines">Lines</option>
+                            <option value="grid">Grid</option>
+                            <option value="circles">Circles</option>
                         </select>
                     </div>
 
                     <div class="control-row" id="patternOpacityRow">
-                        <label>패턴 투명도</label>
+                        <label>Pattern Opacity</label>
                         <div class="range-wrapper">
                             <input type="range" id="patternOpacity" min="5" max="50" value="20">
                             <span class="range-value" id="patternOpacityValue">20%</span>
@@ -345,11 +347,11 @@
                     </div>
 
                     <div class="control-row">
-                        <label>테두리</label>
+                        <label>Border</label>
                         <div class="toggle-group" id="borderToggle">
-                            <button class="toggle-btn active" data-border="none">없음</button>
-                            <button class="toggle-btn" data-border="simple">심플</button>
-                            <button class="toggle-btn" data-border="accent">악센트</button>
+                            <button class="toggle-btn active" data-border="none">None</button>
+                            <button class="toggle-btn" data-border="simple">Simple</button>
+                            <button class="toggle-btn" data-border="accent">Accent</button>
                         </div>
                     </div>
                 </div>
@@ -361,9 +363,9 @@
                             stroke-width="2">
                             <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
                         </svg>
-                        배너 다운로드 (PNG)
+                        Download Banner (PNG)
                     </button>
-                    <p class="download-note">1584 × 396px 고해상도 이미지로 저장됩니다</p>
+                    <p class="download-note">Saves as 1584 × 396px high-resolution image</p>
                 </div>
             </section>
         </main>
